@@ -1,0 +1,35 @@
+@import "../../assets/_variables";
+
+.button {
+  width: 100%;
+  padding: 0;
+  height: 41px;
+  margin: 6px auto;
+  border-radius: 20px;
+  border: 1px solid #040404;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: transparent;
+  color: #000;
+}
+
+.secondary {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (min-width: $xs) {
+  .button {
+    margin: 0 auto;
+    width: 166px;
+  }
+}
+
+@media (min-width: $md) {
+  .button {
+    width: 200px;
+  }
+}

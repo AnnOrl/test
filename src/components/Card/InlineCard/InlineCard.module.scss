@@ -1,0 +1,53 @@
+@import "../../../assets/variables";
+
+.card {
+  display: grid;
+  grid-column-gap: 31px;
+}
+
+.image {
+  display: none;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 14px;
+  color: #888888;
+  margin-top: 14px;
+}
+.price {
+  font-size: 20px;
+  font-weight: 500;
+  color: #050505;
+  margin-top: 16px;
+}
+
+.actions {
+  margin-top: 15px;
+
+  & a {
+    font-size: 14px;
+    color: #000;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: $md) {
+  .card {
+    grid-template-columns: 173px minmax(auto, 276px);
+  }
+
+  .image {
+    display: block;
+    width: 173px;
+    height: 173px;
+    background-color: #cccccc80;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

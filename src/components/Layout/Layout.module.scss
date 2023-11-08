@@ -1,0 +1,23 @@
+@import "../../assets/_variables";
+
+$bodyPadding: 24px;
+
+.body {
+  max-width: 1200px + $bodyPadding * 2;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.outlet {
+  margin: 16px 0;
+}
+
+@media (min-width: $md) {
+  .body {
+    padding: 0 24px;
+  }
+
+  .outlet {
+    margin: 32px 0;
+  }
+}

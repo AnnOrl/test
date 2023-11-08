@@ -1,0 +1,66 @@
+@import "../../assets/_variables";
+
+.card {
+  user-select: none;
+}
+
+.image {
+  height: 250px;
+  background-color: #cccccc80;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+
+    & svg {
+      cursor: pointer;
+
+      &:hover path {
+        fill: #fff;
+      }
+
+      &:first-child {
+        margin-right: 21px;
+      }
+    }
+  }
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.name,
+.price {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.price {
+  margin-top: 12px;
+  color: #050505;
+}
+
+.description {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #888888;
+}
+
+@media (min-width: $md) {
+  .image {
+    .actions {
+      display: none;
+    }
+
+    &:hover {
+      .actions {
+        display: flex;
+      }
+    }
+  }
+}

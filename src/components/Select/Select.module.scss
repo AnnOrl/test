@@ -1,0 +1,30 @@
+$selectHeight: 38px;
+$triangleHeight: 10px;
+
+.select {
+  position: relative;
+  display: inline-block;
+
+  & select {
+    height: $selectHeight;
+    border-radius: 20px;
+    padding: 0 75px 0 14px;
+    appearance: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 22px;
+    pointer-events: none;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    //for bottom version (should it change?)
+    //border-width: 0 10px 10px 10px;
+    border-color: #000 transparent transparent transparent;
+  }
+}
